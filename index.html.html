@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>4Constructions | Build • Renew • Design • Inspect</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#f5f5f5;color:#333;line-height:1.6}
+header{background:#1f2937;color:white;padding:20px 8%;position:sticky;top:0;z-index:1000}
+nav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.logo{font-size:32px;font-weight:bold;color:#f59e0b}
+nav ul{display:flex;list-style:none;gap:20px}
+nav a{text-decoration:none;color:white;font-weight:bold}
+.hero{background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=80') center/cover;height:85vh;display:flex;align-items:center;justify-content:center;text-align:center;color:white;padding:20px}
+.hero h1{font-size:56px;margin-bottom:10px}
+.hero p{font-size:20px;margin-bottom:20px}
+.btn{display:inline-block;background:#f59e0b;color:white;padding:12px 22px;border-radius:5px;text-decoration:none;margin:5px}
+section{padding:60px 8%}
+h2{text-align:center;color:#1f2937;margin-bottom:15px;font-size:36px}
+.intro{text-align:center;max-width:900px;margin:auto}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:30px}
+.card{background:white;padding:20px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+.card img{width:100%;height:180px;object-fit:cover;border-radius:8px;margin-bottom:10px}
+select,input,textarea{width:100%;padding:12px;margin:8px 0;border:1px solid #ccc;border-radius:5px}
+button{background:#f59e0b;color:white;border:none;padding:12px 20px;border-radius:5px;cursor:pointer}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px}
+.gallery img{width:100%;height:220px;object-fit:cover;border-radius:10px}
+.video{max-width:900px;margin:auto}
+iframe{width:100%;height:450px;border-radius:10px;border:none}
+.forms{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}
+footer{background:#111827;color:white;text-align:center;padding:30px}
+.contact a{color:#f59e0b;text-decoration:none}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<div class="logo">4Constructions</div>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#forms">Enquiry</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h1>Build • Renew • Design • Inspect</h1>
+<p>Your trusted construction partner for homes, commercial spaces and infrastructure solutions.</p>
+<a href="#forms" class="btn">Request Quotation</a>
+<a href="#contact" class="btn">Contact Us</a>
+</div>
+</section>
+
+<section id="about">
+<h2>About 4Constructions</h2>
+<p class="intro">
+4Constructions delivers complete construction and property solutions with a commitment to quality, safety and customer satisfaction. From new construction and renovation to design planning and professional inspections, we help clients transform ideas into reliable and modern spaces.
+</p>
+</section>
+
+<section id="services">
+<h2>Our Services</h2>
+<div class="cards">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=800&q=80">
+<h3>Build</h3>
+<p>Residential houses, villas, apartments, commercial and industrial buildings.</p>
+<select>
+<option>Select Building Type</option>
+<option>House</option><option>Villa</option><option>Apartment</option><option>Commercial</option><option>Industrial</option>
+</select>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80">
+<h3>Renew</h3>
+<p>Renovation, remodeling, restoration and modernization services.</p>
+<select>
+<option>Select Renewal Service</option>
+<option>Renovation</option><option>Interior Upgrade</option><option>Restoration</option><option>Office Remodeling</option>
+</select>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80">
+<h3>Design</h3>
+<p>Architectural design, interiors, structural planning and project concepts.</p>
+<select>
+<option>Select Design Service</option>
+<option>Architecture</option><option>Interior Design</option><option>Landscape</option><option>Structural Planning</option>
+</select>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=800&q=80">
+<h3>Inspect</h3>
+<p>Site surveys, structural inspections, safety and quality checks.</p>
+<select>
+<option>Select Inspection</option>
+<option>Site Survey</option><option>Structural</option><option>Safety</option><option>Electrical / Plumbing</option>
+</select>
+</div>
+</div>
+</section>
+
+<section>
+<h2>Project Video</h2>
+<div class="video">
+<iframe src="https://www.youtube.com/embed/ScMzIvxBSi4" allowfullscreen></iframe>
+</div>
+</section>
+
+<section id="gallery">
+<h2>Construction Gallery</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&fit=crop&w=800&q=80">
+</div>
+</section>
+
+<section id="forms">
+<h2>Survey & Quotation Requests</h2>
+<div class="forms">
+<div class="card">
+<h3>Request Site Survey</h3>
+<form>
+<input type="text" placeholder="Your Name">
+<input type="tel" placeholder="Phone Number">
+<textarea placeholder="Survey Details"></textarea>
+<button type="submit">Request Survey</button>
+</form>
+</div>
+
+<div class="card">
+<h3>Ask for Quotation</h3>
+<form>
+<input type="text" placeholder="Project Type">
+<input type="number" placeholder="Estimated Budget">
+<textarea placeholder="Project Description"></textarea>
+<button type="submit">Get Quotation</button>
+</form>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<div class="card contact" style="max-width:700px;margin:auto;text-align:center">
+<p><strong>Phone:</strong> <a href="tel:81216604345">81216604345</a></p>
+<p><strong>Email:</strong> <a href="mailto:info.4constructions@gmail.com">info.4constructions@gmail.com</a></p>
+<p><strong>WhatsApp:</strong> <a href="https://wa.me/918121660345">Chat on WhatsApp</a></p>
+<p>We are ready to discuss your construction requirements and provide professional guidance.</p>
+</div>
+</section>
+
+<footer>
+<p>© 2026 4Constructions | Modern Construction Solutions</p>
+</footer>
+
+</body>
+</html>
