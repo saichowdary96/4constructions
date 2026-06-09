@@ -131,21 +131,31 @@ footer{background:#111827;color:white;text-align:center;padding:30px}
 <div class="forms">
 <div class="card">
 <h3>Request Site Survey</h3>
-<form>
-<input type="text" placeholder="Your Name">
-<input type="tel" placeholder="Phone Number">
-<textarea placeholder="Survey Details"></textarea>
+<form action="https://formspree.io/f/mjgdryqk" method="POST">
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="tel" name="phone" placeholder="Phone Number" required>
+
+<textarea name="survey_details" placeholder="Survey Details" required></textarea>
+
 <button type="submit">Request Survey</button>
+
 </form>
 </div>
 
 <div class="card">
 <h3>Ask for Quotation</h3>
-<form>
-<input type="text" placeholder="Project Type">
-<input type="number" placeholder="Estimated Budget">
-<textarea placeholder="Project Description"></textarea>
+<form action="https://formspree.io/f/mjgdryqk" method="POST">
+
+<input type="text" name="project_type" placeholder="Project Type" required>
+
+<input type="number" name="budget" placeholder="Estimated Budget">
+
+<textarea name="project_description" placeholder="Project Description" required></textarea>
+
 <button type="submit">Get Quotation</button>
+
 </form>
 </div>
 </div>
