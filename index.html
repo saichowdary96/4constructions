@@ -34,8 +34,16 @@ display:block;
 nav ul{display:flex;list-style:none;gap:20px}
 nav a{text-decoration:none;color:white;font-weight:bold}
 .hero{background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=80') center/cover;height:85vh;display:flex;align-items:center;justify-content:center;text-align:center;color:white;padding:20px}
-.hero h1{font-size:56px;margin-bottom:10px}
+.hero h1{font-size:42px;margin-bottom:10px}
 .hero p{font-size:20px;margin-bottom:20px}
+.hero-logo{
+max-width:900px;
+width:90%;
+height:auto;
+display:block;
+margin:0 auto 25px auto;
+filter:drop-shadow(0 4px 12px rgba(0,0,0,.5));
+}
 .btn{display:inline-block;background:#f59e0b;color:white;padding:12px 22px;border-radius:5px;text-decoration:none;margin:5px}
 section{padding:60px 8%}
 h2{text-align:center;color:#1f2937;margin-bottom:15px;font-size:36px}
@@ -154,6 +162,9 @@ document.querySelector("nav ul").classList.toggle("active");
 
 <section class="hero">
 <div>
+<img src="images/logo-banner.png"
+     alt="4Constructions"
+     class="hero-logo">
 <h1>Construction • Design • Survey • Inspection</h1>
 <p>Construction, Building Design, Land Survey, Building Inspection, Renovation, Interior Design and Project Management Services.</p>
 <a href="#forms" class="btn">Request Quotation</a>
