@@ -22,15 +22,12 @@ body{background:#f5f5f5;color:#333;line-height:1.6}
 header{background:#1f2937;color:white;padding:20px 8%;position:sticky;top:0;z-index:1000}
 nav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
 .logo{
-display:flex;
-align-items:center;
+    font-size:42px;
+    font-weight:bold;
+    color:#f59e0b;
+    letter-spacing:1px;
 }
 
-.logo img{
-height:70px;
-width:auto;
-display:block;
-}
 nav ul{display:flex;list-style:none;gap:20px}
 nav a{text-decoration:none;color:white;font-weight:bold}
 .hero{background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=80') center/cover;height:85vh;display:flex;align-items:center;justify-content:center;text-align:center;color:white;padding:20px}
@@ -130,9 +127,7 @@ document.querySelector("nav ul").classList.toggle("active");
 
 <header>
 <nav>
-<div class="logo">
-    <img src="images/logo.png" alt="4Constructions Logo">
-</div>
+<div class="logo">4Constructions</div>
 
 <div class="menu-toggle" onclick="toggleMenu()">
 ☰
