@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<title>Interior Design | 4Constructions</title>
+
+<style>
+body{
+font-family:Arial,sans-serif;
+padding:20px;
+background:#f5f5f5;
+}
+
+h1{
+text-align:center;
+margin-bottom:30px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.03);
+}
+</style>
+</head>
+
+<body>
+
+<h1>🛋️ Interior Design Projects</h1>
+
+<div class="gallery">
+
+<a href="images/interior/gallery1.jpg" data-lightbox="interior">
+<img src="images/interior/gallery1.jpg">
+</a>
+
+<a href="images/interior/gallery2.jpg" data-lightbox="interior">
+<img src="images/interior/gallery2.jpg">
+</a>
+
+<a href="images/interior/gallery3.jpg" data-lightbox="interior">
+<img src="images/interior/gallery3.jpg">
+</a>
+
+<a href="images/interior/gallery4.jpg" data-lightbox="interior">
+<img src="images/interior/gallery4.jpg">
+</a>
+
+<a href="images/interior/gallery5.jpg" data-lightbox="interior">
+<img src="images/interior/gallery5.jpg">
+</a>
+
+<a href="images/interior/gallery6.jpg" data-lightbox="interior">
+<img src="images/interior/gallery6.jpg">
+</a>
+
+<a href="images/interior/gallery7.jpg" data-lightbox="interior">
+<img src="images/interior/gallery7.jpg">
+</a>
+
+<a href="images/interior/gallery8.jpg" data-lightbox="interior">
+<img src="images/interior/gallery8.jpg">
+</a>
+
+<a href="images/interior/gallery9.jpg" data-lightbox="interior">
+<img src="images/interior/gallery9.jpg">
+</a>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+<script>
+lightbox.option({
+wrapAround:true,
+albumLabel:"Image %1 of %2"
+});
+</script>
+
+</body>
+</html>
