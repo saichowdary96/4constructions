@@ -140,15 +140,17 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 700; line-height: 1
 
 .brand { display: flex; align-items: center; gap: 12px; z-index: 1100; }
 .brand__mark {
-  width: 46px; height: 46px; border-radius: 13px;
-  background: var(--grad-brand); display: grid; place-items: center;
-  box-shadow: var(--shadow-sm); flex-shrink: 0;
+  width: 50px; height: 50px; border-radius: 13px;
+  object-fit: cover; background: #0c273c; flex-shrink: 0; display: block;
+  box-shadow: 0 0 0 1.5px rgba(245, 144, 66, 0.55), var(--shadow-sm);
+  transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease);
 }
+.brand:hover .brand__mark { transform: rotate(-4deg) scale(1.05); box-shadow: 0 0 0 2px rgba(245, 144, 66, 0.8), var(--shadow-md); }
 .brand__mark svg { width: 28px; height: 28px; }
 .brand__text { display: flex; flex-direction: column; line-height: 1.05; }
 .brand__name { font-family: var(--font-head); font-weight: 800; font-size: 21px; letter-spacing: -0.02em; color: #fff; transition: color 0.4s var(--ease); }
 .brand__name b { color: var(--orange-500); }
-.brand__tag { font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255, 255, 255, 0.65); transition: color 0.4s var(--ease); font-weight: 600; }
+.brand__tag { font-size: 9.5px; letter-spacing: 0.05em; text-transform: uppercase; color: rgba(255, 255, 255, 0.65); transition: color 0.4s var(--ease); font-weight: 600; white-space: nowrap; }
 .header.is-scrolled .brand__name { color: var(--navy-900); }
 .header.is-scrolled .brand__tag { color: var(--slate); }
 
@@ -538,6 +540,7 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-6px) rotate
    Responsive
    ========================================================================== */
 @media (max-width: 1024px) {
+  .brand__tag { display: none; }
   .hero__grid { grid-template-columns: 1fr; gap: 40px; }
   .hero__panel { max-width: 460px; }
   .stats__grid { grid-template-columns: repeat(2, 1fr); }
