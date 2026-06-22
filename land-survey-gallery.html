@@ -1,70 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
-
-<title>Land Survey Projects | 4Constructions</title>
-
-<style>
-body{
-font-family:Arial,sans-serif;
-padding:20px;
-background:#f5f5f5;
-}
-
-h1{
-text-align:center;
-margin-bottom:30px;
-}
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:20px;
-}
-
-.gallery img{
-width:100%;
-border-radius:10px;
-cursor:pointer;
-transition:0.3s;
-}
-
-.gallery img:hover{
-transform:scale(1.03);
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Land Surveying Projects | 4Constructions</title>
+  <meta name="description" content="Accurate site surveys, boundary marking and topographic mapping by 4Constructions." />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/gallery.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" />
 </head>
-
 <body>
+  <header class="g-header">
+    <div class="g-header__bg"><img src="images/survey/land-survey-1.jpg" alt="Land surveying" /></div>
+    <div class="g-container">
+      <a href="index.html#portfolio" class="g-back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg> Back to Home</a>
+      <div><span class="g-eyebrow">Portfolio · Surveying</span></div>
+      <h1>Land Surveying</h1>
+      <p>Accurate site surveys, boundary marking and topographic mapping using advanced instruments.</p>
+    </div>
+  </header>
 
-<h1>📍 Land Survey Projects</h1>
+  <main class="g-main">
+    <div class="gallery">
+      <a href="images/survey/land-survey-1.jpg" data-lightbox="survey"><img src="images/survey/land-survey-1.jpg" alt="Land survey 1" loading="lazy" /><span class="g-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg></span></a>
+      <a href="images/survey/land-survey-2.jpg" data-lightbox="survey"><img src="images/survey/land-survey-2.jpg" alt="Land survey 2" loading="lazy" /><span class="g-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg></span></a>
+      <a href="images/survey/land-survey-3.jpg" data-lightbox="survey"><img src="images/survey/land-survey-3.jpg" alt="Land survey 3" loading="lazy" /><span class="g-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg></span></a>
+    </div>
 
-<div class="gallery">
+    <div class="g-cta">
+      <h2>Need an accurate land survey?</h2>
+      <p>Request a precise site survey from our certified surveyors.</p>
+      <a href="index.html#contact" class="g-btn">Request a Survey <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+    </div>
+  </main>
 
-<a href="images/survey/land-survey-1.jpg" data-lightbox="survey">
-<img src="images/survey/land-survey-1.jpg">
-</a>
-
-<a href="images/survey/land-survey-2.jpg" data-lightbox="survey">
-<img src="images/survey/land-survey-2.jpg">
-</a>
-
-<a href="images/survey/land-survey-3.jpg" data-lightbox="survey">
-<img src="images/survey/land-survey-3.jpg">
-</a>
-
-</div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
-
-<script>
-lightbox.option({
-wrapAround:true,
-albumLabel:"Image %1 of %2"
-});
-</script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+  <script>lightbox.option({ wrapAround: true, albumLabel: "Image %1 of %2", fadeDuration: 250 });</script>
 </body>
 </html>

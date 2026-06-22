@@ -1,0 +1,12 @@
+{
+  "name": "4Constructions",
+  "short_name": "4Constructions",
+  "description": "Construction, Architectural Design, Land Surveying & Site Inspection services.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a1f33",
+  "theme_color": "#0a1f33",
+  "icons": [
+    { "src": "favicon.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
